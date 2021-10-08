@@ -80,7 +80,7 @@ public final class ApacheHttpServerCVE202141773VulnDetectorTest {
   }
 
   @Test
-  public void detect_whenNoVulnerable_returnsVulnerability()
+  public void detect_whenNoVulnerable_returnsNoFinding()
       throws IOException {
     createInjector();
     mockWebServer.setDispatcher(new SafeEndpointDispatcher());
